@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Open Sans;
+    font-size: 18px;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+/*Menu*/
+
+header{
+    padding: 30px;
+    background-image: url(./components/images/bg-hero-desktop.svg);
+    background-color: rgba(7, 152, 248, 0.089);
+}
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: auto;
+}
+header button{
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 18px;
+    width: 130px;
+    box-shadow: 2px 2px 12px rgba(187, 187, 187, 0.603);
+    color: hsl(192, 100%, 9%);
+    font-weight: 700;
+    cursor: pointer;
+}
+header img{
+    width: 150px;
+}
+
+/*Hero*/
+.hero{
+    background-image: url(./components/images/bg-hero-desktop.svg);
+    background-color: rgba(7, 152, 248, 0.089);
+    background-repeat: repeat-x;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.hero-main{
+    display: flex;
+    max-width: 1440px;
+    width: 90%;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.hero-main img{
+    width: 80%;
+}
+.hero-img{
+    text-align: right;
+    padding-top: 60px;
+}
+.text-container{
+    width: 70%;
+    max-width: 600px;
+    padding-top: 20px;
+}
+.text-container h1{
+    padding: 20px 0px;
+    color:hsl(192, 100%, 9%);
+    font-size: 2rem;
+}
+.text-container p{
+    padding: 20px 0px 30px 0;
+    color:hsl(192, 100%, 9%);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.text-container a{
+    text-decoration: none;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    padding: 15px 30px;
+    font-size: 0.9rem;
+    border-radius: 25px;
+}
+
+/*Cards*/
+
+.card1, .card2, .card3{
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    width: 90%;
+    margin: 50px auto;
+    box-shadow: 1px 5px 15px rgba(187, 187, 187, 0.575);
+    border-radius: 15px;
+    padding: 70px 80px;
+    justify-content: space-between;
+}
+.cards img{
+    max-width: 600px;
+    width: 90%;
+}
+.card-text{
+    width: 90%;
+    max-width: 500px;
+    padding: 0 20px;
+}
+.card h1, p{
+    color:hsl(192, 100%, 9%);
+    padding: 20px 0;
+}
+
+/*Call Again*/
+
+.call-again{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.call{
+    box-shadow: 1px 1px 10px rgba(187, 187, 187, 0.425);
+    background-color: white;
+    max-width: 700px;
+    width: 95%;
+    padding: 70px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 90px;
+    position: absolute;
+    z-index: 1;
+}
+.call h2{
+    padding: 20px;
+    color:hsl(192, 100%, 9%);
+}
+.call a{
+    text-decoration: none;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    padding: 15px 30px;
+    font-size: 0.9rem;
+    border-radius: 25px;
+}
+
+/*Footer*/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 180px 150px 100px;
+    color: white;
+    background-color: hsl(192, 100%, 9%);
+    align-items: center;
+    width: 100vw;
+    margin-top: 120px;
+    position: absolute;
+    z-index: 0;
+}
+footer p{
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer .item{
+    max-width: 350px;
+}
+.section1 .item{
+    display: flex;
+    align-items: center;
+}
+.item p{
+    padding-left: 20px;
+}
+.section .item{
+    padding: 10px 0;
+}
+.section4 i{
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+    .hero-main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .hero-img{
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .section .item{
+        text-align: left;
+    }
+    .section{
+        padding: 20px 0;
+        justify-content: left;
+    }
+}
+@media (max-width: 768px){
+    .card1, .card2, .card3{
+        flex-direction: column;
+        text-align: center;
+    }
+    .card-text{
+       padding: 0px;
+       font-size: .9rem;
+    }
+    .hero-main{
+        text-align: center;
+    }
+}
